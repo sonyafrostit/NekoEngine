@@ -48,7 +48,6 @@ namespace NekoEngine {
 			mainWindow = SDL_CreateWindow(next_scene.getWindowTitle().c_str(), SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, next_scene.getHorizontalRes(), next_scene.getVerticalRes(), SDL_WINDOW_SHOWN);
 		}
 		current_scene = &next_scene;
-		std::cout << current_scene->getHorizontalRes();
 	}
 
 
