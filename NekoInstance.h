@@ -12,10 +12,9 @@ namespace NekoEngine {
 		NekoInstance();
 		~NekoInstance();
 		void loadScene(NekoScene);
-		void start();
 		void update();
 		void render();
-		void stop();
+		void update();
 	private:
 		SDL_Window* mainWindow;
 		NekoScene* current_scene;

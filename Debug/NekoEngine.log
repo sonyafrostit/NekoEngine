@@ -1,22 +1,24 @@
-﻿Build started 10/31/2015 2:26:57 PM.
+﻿Build started 11/20/2015 1:08:44 PM.
      1>Project "C:\Users\Sonya\documents\visual studio 2013\Projects\NekoEngine\NekoEngine\NekoEngine.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         E:\VS2013\VC\bin\CL.exe /c /IC:\SDL\include /I"C:\Boost\include\boost-1_59" /IC:\Python27x86\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt NekoInstance.cpp NekoMain.cpp NekoScene.cpp NekoScript.cpp
+         E:\VS2013\VC\bin\CL.exe /c /IC:\SDL\include /I"C:\Boost\include\boost-1_59" /IC:\Python27x86\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt NekoInstance.cpp
          NekoInstance.cpp
-         Generating Code...
-         Compiling...
-         NekoScript.cpp
-         NekoScene.cpp
-         NekoMain.cpp
-         Generating Code...
-       Link:
-         E:\VS2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Sonya\documents\visual studio 2013\Projects\NekoEngine\Debug\NekoEngine.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\SDL\lib\x86 /LIBPATH:C:\Boost\lib\i386 /LIBPATH:C:\Python27x86\libs kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib SDL2.lib SDL2main.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Sonya\documents\visual studio 2013\Projects\NekoEngine\Debug\NekoEngine.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Sonya\documents\visual studio 2013\Projects\NekoEngine\Debug\NekoEngine.lib" /MACHINE:X86 Debug\NekoMain.obj
-         Debug\NekoInstance.obj
-         Debug\NekoScene.obj
-         Debug\NekoScript.obj
-         NekoEngine.vcxproj -> C:\Users\Sonya\documents\visual studio 2013\Projects\NekoEngine\Debug\NekoEngine.exe
-     1>Done Building Project "C:\Users\Sonya\documents\visual studio 2013\Projects\NekoEngine\NekoEngine\NekoEngine.vcxproj" (Build target(s)).
+     1>c:\users\sonya\documents\visual studio 2013\projects\nekoengine\nekoengine\nekoinstance.cpp(22): error C2039: 'start' : is not a member of 'NekoEngine::NekoInstance'
+                 c:\users\sonya\documents\visual studio 2013\projects\nekoengine\nekoengine\nekoinstance.h(10) : see declaration of 'NekoEngine::NekoInstance'
+     1>c:\users\sonya\documents\visual studio 2013\projects\nekoengine\nekoengine\nekoinstance.cpp(23): error C2065: 'current_scene' : undeclared identifier
+     1>c:\users\sonya\documents\visual studio 2013\projects\nekoengine\nekoengine\nekoinstance.cpp(26): error C2065: 'running' : undeclared identifier
+     1>c:\users\sonya\documents\visual studio 2013\projects\nekoengine\nekoengine\nekoinstance.cpp(27): error C2065: 'running' : undeclared identifier
+     1>c:\users\sonya\documents\visual studio 2013\projects\nekoengine\nekoengine\nekoinstance.cpp(28): error C3861: 'update': identifier not found
+     1>c:\users\sonya\documents\visual studio 2013\projects\nekoengine\nekoengine\nekoinstance.cpp(29): error C3861: 'render': identifier not found
+     1>c:\users\sonya\documents\visual studio 2013\projects\nekoengine\nekoengine\nekoinstance.cpp(32): error C2511: 'void NekoEngine::NekoInstance::update(void)' : overloaded member function not found in 'NekoEngine::NekoInstance'
+                 c:\users\sonya\documents\visual studio 2013\projects\nekoengine\nekoengine\nekoinstance.h(10) : see declaration of 'NekoEngine::NekoInstance'
+     1>c:\users\sonya\documents\visual studio 2013\projects\nekoengine\nekoengine\nekoinstance.cpp(33): error C2227: left of '->update' must point to class/struct/union/generic type
+     1>c:\users\sonya\documents\visual studio 2013\projects\nekoengine\nekoengine\nekoinstance.cpp(35): error C2511: 'void NekoEngine::NekoInstance::render(void)' : overloaded member function not found in 'NekoEngine::NekoInstance'
+                 c:\users\sonya\documents\visual studio 2013\projects\nekoengine\nekoengine\nekoinstance.h(10) : see declaration of 'NekoEngine::NekoInstance'
+     1>c:\users\sonya\documents\visual studio 2013\projects\nekoengine\nekoengine\nekoinstance.cpp(37): error C2039: 'stop' : is not a member of 'NekoEngine::NekoInstance'
+                 c:\users\sonya\documents\visual studio 2013\projects\nekoengine\nekoengine\nekoinstance.h(10) : see declaration of 'NekoEngine::NekoInstance'
+     1>Done Building Project "C:\Users\Sonya\documents\visual studio 2013\Projects\NekoEngine\NekoEngine\NekoEngine.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:04.36
+Time Elapsed 00:00:00.27

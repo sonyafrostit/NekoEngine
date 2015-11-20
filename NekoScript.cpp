@@ -12,11 +12,12 @@ namespace NekoEngine {
 	{
 		py::class_<NekoInstance>("NekoInstance")
 			.def("loadScene", &NekoInstance::loadScene, py::arg("new_scene"))
-			.def("start", &NekoInstance::start)
-			.def("stop", &NekoInstance::stop);
+			.def("update", &NekoInstance::update, py::arg("scene"))
+			.def("render", &NekoInstance::render, py::arg("scene"));
 
 		py::class_<NekoScene>("NekoScene", py::init<int, int, std::string>())
-			.def("getWindowTitle", &NekoScene::getWindowTitle);
+			.def("getWindowTitle", &NekoScene::getWindowTitle)
+			.def("onQuit", &NekoScene::onQuit);
 	}
 	void init_script_engine() {
 		Py_Initialize();

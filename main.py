@@ -1,10 +1,14 @@
 import neko
 import time
-engine = neko.NekoInstance()
+
 class StartScene(neko.NekoScene):
     def onQuit():
+        global running
         print "Quit it!"
-        engine.stop()
-scene = StartScene(640, 480, "test");
+        running = False
+
+engine = neko.NekoInstance()
+running = True
+scene = neko.NekoScene(640, 480, "test");
 engine.loadScene(scene)
-engine.start()
+

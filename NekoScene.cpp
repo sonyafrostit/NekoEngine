@@ -1,5 +1,6 @@
 #include "NekoScene.h"
 #include "SDL.h"
+#include <iostream>
 
 namespace NekoEngine {
 	NekoScene::NekoScene(int x, int y, std::string title) {
@@ -19,6 +20,7 @@ namespace NekoEngine {
 		return window_title;
 	}
 	void NekoScene::update() {
+		std::cout << "Hello";
 		SDL_Event e;
 		while (SDL_PollEvent(&e)) {
 			if (e.type == SDL_QUIT) {
@@ -26,5 +28,7 @@ namespace NekoEngine {
 			}
 		}
 	}
-
+	NekoScene::~NekoScene() {
+		std::cout << "deallocating scene" << std::endl;
+	}
 }

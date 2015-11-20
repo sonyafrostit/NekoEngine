@@ -8,6 +8,7 @@ namespace NekoEngine {
 	class NekoScene {
 	public:
 		NekoScene(int, int, std::string);
+		~NekoScene();
 		int getVerticalRes();
 		int getHorizontalRes();
 		void cleanup();
