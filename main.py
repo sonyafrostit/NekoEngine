@@ -7,4 +7,4 @@ class StartScene(neko.NekoScene):
         engine.stop()
 scene = StartScene(640, 480, "test");
 engine.loadScene(scene)
-engine.start()
+

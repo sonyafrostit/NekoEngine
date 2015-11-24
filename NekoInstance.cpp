@@ -23,11 +23,11 @@ namespace NekoEngine {
 		if (current_scene == NULL) {
 			throw NekoNoSceneException();
 		}
-		running = true;
-		while (running) {
-			update();
-			render();
-		}
+		
+			while (current_scene->isRunning()) {
+				update();
+				render();
+			}
 	}
 	void NekoInstance::update() {
 		current_scene->update();
@@ -35,19 +35,21 @@ namespace NekoEngine {
 	void NekoInstance::render() {
 	}
 	void NekoInstance::stop() {
+		current_scene->cleanup();
 	}
-	void NekoInstance::loadScene(NekoScene next_scene) {
+	void NekoInstance::loadScene(NekoScene* next_scene) {
 		if (current_scene != NULL) {
-			if (next_scene.getHorizontalRes() != current_scene->getHorizontalRes() ||
-				next_scene.getVerticalRes() != current_scene->getVerticalRes()) {
-				mainWindow = SDL_CreateWindow(next_scene.getWindowTitle().c_str(), SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, next_scene.getHorizontalRes(), next_scene.getVerticalRes(), SDL_WINDOW_SHOWN);
+			if (next_scene->getHorizontalRes() != current_scene->getHorizontalRes() ||
+				next_scene->getVerticalRes() != current_scene->getVerticalRes()) {
+				mainWindow = SDL_CreateWindow(next_scene->getWindowTitle().c_str(), SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, next_scene->getHorizontalRes(), next_scene->getVerticalRes(), SDL_WINDOW_SHOWN);
 			}
 			current_scene->cleanup();
 		}
 		else {
-			mainWindow = SDL_CreateWindow(next_scene.getWindowTitle().c_str(), SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, next_scene.getHorizontalRes(), next_scene.getVerticalRes(), SDL_WINDOW_SHOWN);
+			mainWindow = SDL_CreateWindow(next_scene->getWindowTitle().c_str(), SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, next_scene->getHorizontalRes(), next_scene->getVerticalRes(), SDL_WINDOW_SHOWN);
 		}
-		current_scene = &next_scene;
+		current_scene = next_scene;
+		
 	}
 
 

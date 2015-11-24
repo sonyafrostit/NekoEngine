@@ -6,6 +6,7 @@ namespace NekoEngine {
 		vertical_res = y;
 		horizontal_res = x;
 		window_title = title;
+		running = true;
 	}
 	void NekoScene::cleanup() {
 	}

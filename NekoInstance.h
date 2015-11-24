@@ -11,7 +11,7 @@ namespace NekoEngine {
 	public:
 		NekoInstance();
 		~NekoInstance();
-		void loadScene(NekoScene);
+		void loadScene(NekoScene*);
 		void start();
 		void update();
 		void render();

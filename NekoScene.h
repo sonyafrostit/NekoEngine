@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include <string>
 
-
 namespace NekoEngine {
 	class NekoScene {
 	public:
@@ -12,12 +11,14 @@ namespace NekoEngine {
 		int getHorizontalRes();
 		void cleanup();
 		std::string getWindowTitle();
-		virtual void update();
+		void update();
 		virtual void onQuit() {};
+		bool isRunning() { return running; };
 	protected:
 		int vertical_res;
 		int horizontal_res;
 		std::string window_title;
+		bool running;
 	};
 }
 

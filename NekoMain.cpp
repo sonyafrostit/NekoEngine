@@ -1,13 +1,22 @@
 #include "NekoInstance.h"
 #include "NekoException.h"
-#include "NekoScript.h"
 #undef main
+namespace NekoEngine {
+	class MyScene : public NekoScene {
+	public:
+		MyScene() : NekoScene(640, 480, "Fuck off") {
+			
+		}
+		virtual void onQuit()  { running = false; }
+	};
+}
 int main(int argc, char** argv){
-	try {
-		NekoEngine::init_script_engine();
-	} 
-	catch (NekoEngine::NekoExitException) {
-		return 0;
-	}
-	NekoEngine::cleanup_script_engine();
+	
+		NekoEngine::NekoInstance main_window;
+		NekoEngine::MyScene * my_scene = new NekoEngine::MyScene();
+		main_window.loadScene(my_scene);
+		main_window.start();
+		delete my_scene;
+	
+
 }

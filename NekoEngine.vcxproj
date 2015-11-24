@@ -73,13 +73,11 @@
     <ClCompile Include="NekoMain.cpp" />
     <ClCompile Include="NekoInstance.cpp" />
     <ClCompile Include="NekoScene.cpp" />
-    <ClCompile Include="NekoScript.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="NekoException.h" />
     <ClInclude Include="NekoInstance.h" />
     <ClInclude Include="NekoScene.h" />
-    <ClInclude Include="NekoScript.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
