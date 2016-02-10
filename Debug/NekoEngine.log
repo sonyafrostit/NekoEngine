@@ -1,8 +1,8 @@
-﻿Build started 11/24/2015 2:26:16 PM.
+﻿Build started 11/24/2015 2:35:53 PM.
      1>Project "C:\Users\Sonya\documents\visual studio 2013\Projects\NekoEngine\NekoEngine\NekoEngine.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         E:\VS2013\VC\bin\CL.exe /c /IC:\SDL\include /I"C:\Boost\include\boost-1_59" /IC:\Python27x86\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt NekoScene.cpp
-         NekoScene.cpp
+         E:\VS2013\VC\bin\CL.exe /c /IC:\SDL\include /I"C:\Boost\include\boost-1_59" /IC:\Python27x86\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt NekoMain.cpp
+         NekoMain.cpp
        Link:
          E:\VS2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Sonya\documents\visual studio 2013\Projects\NekoEngine\Debug\NekoEngine.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\SDL\lib\x86 /LIBPATH:C:\Boost\lib\i386 /LIBPATH:C:\Python27x86\libs kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib SDL2.lib SDL2main.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Sonya\documents\visual studio 2013\Projects\NekoEngine\Debug\NekoEngine.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Sonya\documents\visual studio 2013\Projects\NekoEngine\Debug\NekoEngine.lib" /MACHINE:X86 Debug\NekoMain.obj
          Debug\NekoInstance.obj
@@ -12,4 +12,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.59
+Time Elapsed 00:00:00.60

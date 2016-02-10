@@ -33,6 +33,7 @@ namespace NekoEngine {
 		current_scene->update();
 	}
 	void NekoInstance::render() {
+		current_scene->render(window_surface);
 	}
 	void NekoInstance::stop() {
 		current_scene->cleanup();

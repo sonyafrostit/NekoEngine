@@ -4,7 +4,7 @@
 namespace NekoEngine {
 	class MyScene : public NekoScene {
 	public:
-		MyScene() : NekoScene(640, 480, "Fuck off") {
+		MyScene() : NekoScene(640, 480, "NekoEngine Demo") {
 			
 		}
 		virtual void onQuit()  { running = false; }

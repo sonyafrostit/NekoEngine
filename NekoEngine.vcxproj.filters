@@ -35,5 +35,8 @@
     <ClInclude Include="NekoScene.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="NekoEntity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

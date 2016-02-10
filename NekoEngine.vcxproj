@@ -75,6 +75,7 @@
     <ClCompile Include="NekoScene.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="NekoEntity.h" />
     <ClInclude Include="NekoException.h" />
     <ClInclude Include="NekoInstance.h" />
     <ClInclude Include="NekoScene.h" />

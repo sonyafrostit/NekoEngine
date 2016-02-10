@@ -18,6 +18,7 @@ namespace NekoEngine {
 		void stop();
 	private:
 		SDL_Window* mainWindow;
+		SDL_Surface* window_surface;
 		NekoScene* current_scene;
 		bool running;
 	};

@@ -1,8 +1,7 @@
 #ifndef NEKOEXCEPTION_H
 #define NEKOEXCEPTION_H
 #include <exception>
-#include <SDL.h>
-#include <stdio.h>
+
 namespace NekoEngine {
 	class NekoInitFailException : public std::exception {
 	
